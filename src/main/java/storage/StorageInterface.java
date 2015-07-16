@@ -1,0 +1,21 @@
+package storage;
+
+/**
+ * Title:           StorageInterface.java
+ * Authors:         Tony Zheng
+ * Created on:      7/13/2015
+ * Description:
+ * Build with:      IntelliJ (or some other IDE) or using the following commands
+ *                  To compile: Javac *.java
+ *                  To run:     java TradingPlatform
+ */
+public interface StorageInterface<T> {
+    
+	public void create();
+    
+	public T read();
+    
+	public void update(T t);
+    
+	public void delete(T t);
+}
